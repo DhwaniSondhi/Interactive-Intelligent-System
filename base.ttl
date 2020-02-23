@@ -1,0 +1,50 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix isp: <http://intelligentsystemproj1.io/schema#> .
+#	@prefix focudata: <http://focu.io/data#> .
+@prefix dbr:  <http://dbpedia.org/resource/> .
+@prefix dbp:  <http://dbpedia.org/property/> .
+@prefix dc:   <http://purl.org/dc/elements/1.1/> .
+
+## or use foaf:organisation
+dbr:University
+	rdfs:label "University"@en;
+	rdfs:comment "Class for a University"@en.
+
+## or use foaf:person	
+dbr:Student
+	rdfs:label "Student"@en;
+	rdfs:comment "Class for a Student"@en.
+
+dbr:Course
+	rdfs:label "Course"@en;
+	rdfs:comment "Class for a Course"@en.
+	
+dbr:Concept
+	rdfs:label "CourseTopic"@en;
+	rdfs:comment "Class for a Course Topic"@en.
+	
+foaf:member
+	rdfs:label "MemberOf"@en;
+	rdfs:comment "Student member of University"@en;
+	rdfs:domain dbr:Student;
+	rdfs:range dbr:University.
+
+foaf:topic_interest
+	rdfs:label "CourseTaken"@en;
+	rdfs:comment "Courses taken by student"@en;
+	rdfs:domain dbr:Student;
+	rdfs:range rdf:list.
+	
+dc:hasPart
+	rdfs:label "PartOfCourse"@en;
+	rdfs:comment "Topics lying under Courses"@en;
+	rdfs:domain dbr:Course;
+	rdfs:range dbr:Concept.
+	
+
+	
+
+	
