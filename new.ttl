@@ -1,0 +1,50 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix focu: <http://focu.io/schema#> .
+@prefix focudata: <http://focu.io/data#> .
+
+# RDF Schema for the FOCU Vocabulary 
+    
+focu:University
+  a rdfs:Class ;
+#  rdfs:subClassOf foaf:Organization;
+  rdfs:label "University"@en ;
+  rdfs:comment "Class for a University"@en.
+  
+#	foaf:name, foaf:homepage
+  
+focu:Course
+  a rdfs:Class ;
+  rdfs:label "Course"@en ;
+  rdfs:comment "Class for a Course"@en.
+  
+#	foaf:name, foaf:homepage for link/ rdfs:seeAlso
+focu:subject
+	rdfs:subPropertyOf rdf:Property;
+	rdfs:domain focu:Course;
+	rdfs:range rdf:Literal.
+
+focu:number
+	rdfs:subPropertyOf rdf:Property; ##specify age
+	rdfs:domain focu:Course;
+	rdfs:range rdf:Literal. ##specify integer
+
+focu:decription
+	rdfs:subPropertyOf rdf:Property;
+	rdfs:domain focu:Course;
+	rdfs:range rdf:Literal.
+  
+## foaf:givenName, foaf:familyName, foaf:mbox
+focu:Student
+  a rdfs:Class ;
+#  rdfs:subClassOf foaf:Person;
+  rdfs:label "Studemt"@en ;
+  rdfs:comment "Class for a student"@en.
+
+focu:id
+	rdfs:subPropertyOf rdf:Property; ##specify age
+	rdfs:domain focu:Student;
+	rdfs:range rdf:Literal. ##specify integer
+
