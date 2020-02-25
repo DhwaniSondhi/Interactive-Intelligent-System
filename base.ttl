@@ -9,6 +9,10 @@
 @prefix dc:   <http://purl.org/dc/elements/1.1/> .
 
 ## or use foaf:organisation
+dbr:Grading
+	rdfs:label "CourseGrade"@en;
+	rdfs:comment "Courses with Grades of a student"@en.
+
 dbr:University
 	rdfs:label "University"@en;
 	rdfs:comment "Class for a University"@en.
@@ -36,7 +40,7 @@ foaf:topic_interest
 	rdfs:label "CourseTaken"@en;
 	rdfs:comment "Courses taken by student"@en;
 	rdfs:domain dbr:Student;
-	rdfs:range rdf:list.
+	rdfs:range dbr:Grade.
 	
 dc:hasPart
 	rdfs:label "PartOfCourse"@en;
@@ -44,7 +48,10 @@ dc:hasPart
 	rdfs:domain dbr:Course;
 	rdfs:range dbr:Concept.
 	
-
-	
+dc:coverage
+	rdfs:label "coveredIn"@en;
+	rdfs:comment "Covered in University"@en;
+	rdfs:domain dbr:University;
+	rdfs:range dbr:Course.
 
 	

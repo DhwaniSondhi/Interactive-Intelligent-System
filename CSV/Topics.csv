@@ -1,1 +1,73 @@
-Title,Description,Link
+,Course Subject,Course Number,Topic,URI
+0,COMP,691,Computer Science,http://dbpedia.org/resource/Computer_science
+1,COMP,691,COMP,http://dbpedia.org/resource/College_of_Osteopathic_Medicine_of_the_Pacific
+2,COMP,691,pass/fail,http://dbpedia.org/resource/Failure
+3,COMP,791,Computer Science,http://dbpedia.org/resource/Computer_science
+4,COMP,791,COMP,http://dbpedia.org/resource/College_of_Osteopathic_Medicine_of_the_Pacific
+5,COMP,6231,distributed computing,http://dbpedia.org/resource/Distributed_computing
+6,COMP,6231,scalability,http://dbpedia.org/resource/Scalability
+7,COMP,6231,concurrency,http://dbpedia.org/resource/Concurrent_computing
+8,COMP,6231,fault tolerance,http://dbpedia.org/resource/Fault_tolerance
+9,COMP,6231,Client-server,http://dbpedia.org/resource/Client–server_model
+10,COMP,6231,interprocess communication,http://dbpedia.org/resource/Inter-process_communication
+11,COMP,6231,communication,http://dbpedia.org/resource/Communication
+12,COMP,6231,remote procedure call,http://dbpedia.org/resource/Remote_procedure_call
+13,COMP,6231,CORBA,http://dbpedia.org/resource/Common_Object_Request_Broker_Architecture
+14,COMP,6231,server,http://dbpedia.org/resource/Web_server
+15,COMP,6231,concurrency control,http://dbpedia.org/resource/Concurrency_control
+16,COMP,6231,fault-tolerant,http://dbpedia.org/resource/Fault_tolerance
+17,COMP,6231,distributed systems,http://dbpedia.org/resource/Distributed_computing
+18,COMP,6281,Neumann,http://dbpedia.org/resource/Balthasar_Neumann
+19,COMP,6281,parallel processing,http://dbpedia.org/resource/Parallel_computing
+20,COMP,6281,message-passing,http://dbpedia.org/resource/Message_passing
+21,COMP,6281,massively parallel,http://dbpedia.org/resource/MIMD
+22,COMP,6281,commodity,http://dbpedia.org/resource/Commodity_computing
+23,COMP,6281,multi-core,http://dbpedia.org/resource/Multi-core_processor
+24,COMP,6281,heterogeneous computing,http://dbpedia.org/resource/Heterogeneous_computing
+25,COMP,6281,memory,http://dbpedia.org/resource/Computer_memory
+26,COMP,6281,load balancing,http://dbpedia.org/resource/Weight_distribution
+27,COMP,6281,message passing,http://dbpedia.org/resource/Message_passing
+28,COMP,6281,scalability,http://dbpedia.org/resource/Scalability
+29,COMP,6281,Parallel programming,http://dbpedia.org/resource/Parallel_computing
+30,COMP,7241,memory,http://dbpedia.org/resource/Computer_memory
+31,COMP,7241,complexity analysis,http://dbpedia.org/resource/Analysis_of_algorithms
+32,COMP,7251,mobile computing,http://dbpedia.org/resource/Mobile_computing
+33,COMP,7251,wireless,http://dbpedia.org/resource/Wireless_LAN
+34,COMP,7251,PAN,http://dbpedia.org/resource/Personal_area_network
+35,COMP,7251,MAN,http://dbpedia.org/resource/Metropolitan_area_network
+36,COMP,7251,sensor networks,http://dbpedia.org/resource/Wireless_sensor_network
+37,COMP,7251,topology,http://dbpedia.org/resource/Network_topology
+38,COMP,6311,traditional animation,http://dbpedia.org/resource/Traditional_animation
+39,COMP,6311,pipeline,http://dbpedia.org/resource/Graphics_pipeline
+40,COMP,6311,interpolation,http://dbpedia.org/resource/Interpolation
+41,COMP,6311,inverse kinematics,http://dbpedia.org/resource/Inverse_kinematics
+42,COMP,6311,motion control,http://dbpedia.org/resource/Motion_control
+43,COMP,6321,Machine Learning,http://dbpedia.org/resource/Machine_learning
+44,COMP,6321,polynomial regression,http://dbpedia.org/resource/Polynomial_regression
+45,COMP,6321,overfitting,http://dbpedia.org/resource/Overfitting
+46,COMP,6321,model selection,http://dbpedia.org/resource/Model_selection
+47,COMP,6321,logistic regression,http://dbpedia.org/resource/Logistic_regression
+48,COMP,6321,decision trees,http://dbpedia.org/resource/Decision_tree_learning
+49,COMP,6321,neural networks,http://dbpedia.org/resource/Artificial_neural_network
+50,COMP,6321,Support vector machines,http://dbpedia.org/resource/Support_vector_machine
+51,COMP,6321,Computational learning theory,http://dbpedia.org/resource/Computational_learning_theory
+52,COMP,6321,deep belief networks,http://dbpedia.org/resource/Deep_belief_network
+53,COMP,6321,Unsupervised learning,http://dbpedia.org/resource/Unsupervised_learning
+54,COMP,6321,k-means,http://dbpedia.org/resource/K-means_clustering
+55,COMP,6321,expectation maximization,http://dbpedia.org/resource/Expectation–maximization_algorithm
+56,COMP,6321,principle component analysis,http://dbpedia.org/resource/Principal_component_analysis
+57,COMP,6321,dimensionality reduction,http://dbpedia.org/resource/Dimensionality_reduction
+58,COMP,6321,dynamical systems,http://dbpedia.org/resource/Dynamical_system
+59,COMP,6321,Markov,http://dbpedia.org/resource/Hidden_Markov_model
+60,COMP,6321,Reinforcement learning,http://dbpedia.org/resource/Reinforcement_learning
+61,COMP,6331,computer,http://dbpedia.org/resource/Computer_science
+62,COMP,6331,Game engine,http://dbpedia.org/resource/Game_engine
+63,COMP,6331,Artificial Intelligence,http://dbpedia.org/resource/Artificial_intelligence
+64,COMP,6331,AI,http://dbpedia.org/resource/Artificial_intelligence
+65,COMP,6331,pathfinding,http://dbpedia.org/resource/Pathfinding
+66,COMP,6331,collision detection,http://dbpedia.org/resource/Collision_detection
+67,COMP,6331,mobile gaming,http://dbpedia.org/resource/Mobile_game
+68,COMP,6331,3D,http://dbpedia.org/resource/3D_computer_graphics
+69,COMP,6341,Computer Vision,http://dbpedia.org/resource/Computer_vision
+70,COMP,6341,OpenCV,http://dbpedia.org/resource/OpenCV
+71,COMP,6341,COMP,http://dbpedia.org/resource/College_of_Osteopathic_Medicine_of_the_Pacific

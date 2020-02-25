@@ -8,6 +8,16 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+dbr:Grading rdfs:label "CourseGrade"@en ;
+    dbp:score xsd:string ;
+    dc:subject dbr:Course ;
+    rdfs:comment "Courses with Grades of a student"@en .
+
+dc:coverage rdfs:label "coveredIn"@en ;
+    rdfs:comment "Covered in University"@en ;
+    rdfs:domain dbr:University ;
+    rdfs:range dbr:Course .
+
 dc:hasPart rdfs:label "PartOfCourse"@en ;
     rdfs:comment "Topics lying under Courses"@en ;
     rdfs:domain dbr:Course ;
@@ -21,12 +31,25 @@ foaf:member rdfs:label "MemberOf"@en ;
 foaf:topic_interest rdfs:label "CourseTaken"@en ;
     rdfs:comment "Courses taken by student"@en ;
     rdfs:domain dbr:Student ;
-    rdfs:range rdf:list .
+    rdfs:range dbr:Grade .
 
 dbr:Concept rdfs:label "CourseTopic"@en ;
-    dc:description xsd:string ;
+    dc:identifier xsd:int ;
+    dc:source xsd:string ;
+    dc:subject xsd:string ;
     rdfs:comment "Class for a Course Topic"@en ;
-    rdfs:seeAlso xsd:string ;
+    foaf:name xsd:string .
+
+dbr:Student rdfs:label "Student"@en ;
+    dc:identifier xsd:int ;
+    rdfs:comment "Class for a Student"@en ;
+    foaf:familyName xsd:string ;
+    foaf:givenName xsd:string ;
+    foaf:mbox xsd:string .
+
+dbr:University rdfs:label "University"@en ;
+    dc:source xsd:string ;
+    rdfs:comment "Class for a University"@en ;
     foaf:name xsd:string .
 
 dbr:Course rdfs:label "Course"@en ;
@@ -36,16 +59,4 @@ dbr:Course rdfs:label "Course"@en ;
     rdfs:comment "Class for a Course"@en ;
     rdfs:seeAlso xsd:string ;
     foaf:name xsd:string .
-
-dbr:University rdfs:label "University"@en ;
-    rdfs:comment "Class for a University"@en ;
-    rdfs:seeAlso xsd:string ;
-    foaf:name xsd:string .
-
-dbr:Student rdfs:label "Student"@en ;
-    dc:identifier xsd:int ;
-    rdfs:comment "Class for a Student"@en ;
-    foaf:familyName xsd:string ;
-    foaf:givenName xsd:string ;
-    foaf:mbox xsd:string .
 
