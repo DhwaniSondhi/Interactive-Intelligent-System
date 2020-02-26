@@ -8,10 +8,8 @@ prefix dbp: <http://dbpedia.org/property/>
 prefix dbr: <http://dbpedia.org/resource/> 
 prefix dc: <http://purl.org/dc/elements/1.1/> 
 prefix foaf: <http://xmlns.com/foaf/0.1/> 
-prefix isp: <http://intelligentsystemproj1.io/schema#> 
 prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
-prefix xml: <http://www.w3.org/XML/1998/namespace> 
 prefix xsd: <http://www.w3.org/2001/XMLSchema#> 
 """
 query1=prefix+"""
@@ -32,29 +30,30 @@ WHERE{
   ?k dc:hasPart ?x.
   ?x foaf:name ?t.
  }
-""" 
+"""
+ 
 query3=prefix+"""
-SELECT ?topic 
+SELECT ?topic ?dbentry
 WHERE{
-?course rdf:type dbr:Course .
-?course foaf:name ?name .
-?course foaf:name "Machine Learning"^^xsd:string.
-?course dc:hasPart ?x.
-?x foaf:name ?topic
+ ?course rdf:type dbr:Course .
+ ?course foaf:name ?name .
+ ?course foaf:name "Machine Learning"^^xsd:string.
+ ?course dc:hasPart ?x.
+ ?x foaf:name ?topic .
+ ?x dc:source ?dbentry
  }
 """
 query4=prefix+"""
 SELECT ?fn ?score ?coursename
 WHERE { 
-?s rdf:type dbr:Student;
+ ?s rdf:type dbr:Student;
  foaf:familyName ?ln;
  foaf:givenName ?fn ;
- foaf:mbox ?mb;
  dc:identifier "40083896"^^xsd:int.
-?s foaf:topic_interest ?gradeobject .
-?gradeobject   dbp:score ?score ;
-    dc:subject ?courseobject .
-?courseobject foaf:name ?coursename
+ ?s foaf:topic_interest ?gradeobject .
+ ?gradeobject   dbp:score ?score ;
+ dc:subject ?courseobject .
+ ?courseobject foaf:name ?coursename
 }
 """
 query5=prefix+"""
@@ -64,7 +63,6 @@ WHERE {
 ?s rdf:type dbr:Student;
  foaf:familyName ?ln;
  foaf:givenName ?fn ;
- foaf:mbox ?mb;
  dc:identifier ?e.
  ?s foaf:topic_interest ?gradeobject.
  ?gradeobject dc:subject  ?courseobject .
@@ -99,8 +97,9 @@ WHERE {
 print("\n\n-------------------------------------------------------------------\n")
 print("\n\n1. Total number of triples in the KB\n")
 for row in g.query(query1):
+   print() 
    for c in row:
-        print("Total no of triples:",c,end=", ")
+        print("Total no of triples:",c,)
     
 print("\n\n-------------------------------------------------------------------\n")
 print("\n\n2. Total number of students, courses, and topics")
@@ -114,7 +113,7 @@ print("\n\n3. For a course c, list all covered topics using their (English) labe
 res=g.query(query3)
 for row in res:
    for c in row:
-        print(c)
+        print(c, end=": ")
     
 print("\n\n-------------------------------------------------------------------\n")
 print("\n\n4. For a given student, list all courses this student completed, together with the grade\n")
