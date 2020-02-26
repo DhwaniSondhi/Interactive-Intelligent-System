@@ -3,7 +3,7 @@ g=rdflib.Graph()
 g.parse("baseGraph.ttl", format='turtle')
 g.parse("DataGraph.ttl", format='turtle')
 
-starter="""PREFIX dbr: <http://dbpedia.org/resource/>
+prefix="""PREFIX dbr: <http://dbpedia.org/resource/>
 prefix dbp: <http://dbpedia.org/property/> 
 prefix dbr: <http://dbpedia.org/resource/> 
 prefix dc: <http://purl.org/dc/elements/1.1/> 
@@ -14,18 +14,17 @@ prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix xml: <http://www.w3.org/XML/1998/namespace> 
 prefix xsd: <http://www.w3.org/2001/XMLSchema#> 
 """
-query1=starter+"""
+query1=prefix+"""
 SELECT (COUNT(*) as ?Triples) 
 WHERE { 
 ?s ?p ?o
 }
 """
-query2=starter+"""
+query2=prefix+"""
 SELECT  
 (COUNT(DISTINCT ?students) as ?scount)
 (COUNT(DISTINCT ?courses) as ?ccount)
 (COUNT(DISTINCT ?t) as ?tcount)
-
 WHERE{
 
   ?students rdf:type dbr:Student .
@@ -34,7 +33,7 @@ WHERE{
   ?x foaf:name ?t.
  }
 """ 
-query3=starter+"""
+query3=prefix+"""
 SELECT ?topic 
 WHERE{
 ?course rdf:type dbr:Course .
@@ -44,7 +43,7 @@ WHERE{
 ?x foaf:name ?topic
  }
 """
-query4=starter+"""
+query4=prefix+"""
 SELECT ?fn ?score ?coursename
 WHERE { 
 ?s rdf:type dbr:Student;
@@ -58,7 +57,7 @@ WHERE {
 ?courseobject foaf:name ?coursename
 }
 """
-query5=starter+"""
+query5=prefix+"""
                   
 SELECT ?fn ?coursename ?grade ?topicname
 WHERE { 
@@ -77,7 +76,7 @@ WHERE {
   FILTER(?grade <"F")
 } 
 """
-query6=starter+"""
+query6=prefix+"""
                   
 SELECT DISTINCT ?fn ?topicname ?coursename ?grade 
 WHERE { 
@@ -97,39 +96,46 @@ WHERE {
 }  
  
 """
-print("\n\nQ1.Count the no of triples.\n")
+print("\n\n-------------------------------------------------------------------\n")
+print("\n\n1. Total number of triples in the KB\n")
 for row in g.query(query1):
    for c in row:
         print("Total no of triples:",c,end=" ")
     
-print("\n\nQ2.Count the number of students, courses, topics")
+print("\n\n-------------------------------------------------------------------\n")
+print("\n\n2. Total number of students, courses, and topics")
 print("Students  Courses  Topics")
 for row in g.query(query2):
    for c in row:
         print(c,end=" ")
     
-print("\n\nQ3.For a course c, list all covered topics using their (English) labels and their link to DBpedia\n")
+print("\n\n-------------------------------------------------------------------\n")
+print("\n\n3. For a course c, list all covered topics using their (English) labels and their link to DBpedia\n")
 res=g.query(query3)
 for row in res:
    for c in row:
         print(c)
     
-print("\n\nQ4. For a given student, list all courses this student completed, together with the grade.\n")
+print("\n\n-------------------------------------------------------------------\n")
+print("\n\n4. For a given student, list all courses this student completed, together with the grade\n")
 print("Name  Grade  Course", end="")
 for row in g.query(query4):
    print() 
    for c in row:
         print(c,end=" ")
     
-print("\n\nQ5.For a given topic, list all students that are familiar with the topic (i.e., took, and did not fail, acourse that covered the topic)")
+print("\n\n-------------------------------------------------------------------\n")
+print("\n\n5. For a given topic, list all students that are familiar with the topic")
 print("Name | Course | Grade | Topic", end="")
 for row in g.query(query5):
    print() 
    for c in row:
         print(c,end=" ")
-print("\n\nQ6. For a student, list all topics (no duplicates) that this student is familiar with (based on the completedcourses for this student that are better than an \F grade")
+print("\n\n-------------------------------------------------------------------\n")
+print("\n\n6.For a student, list all topics (no duplicates) that this student is familiar with")
 print(" Name | Topic | Course | Grade ", end="")
 for row in g.query(query6):
    print() 
    for c in row:
         print(c,end=" ")
+print("\n\n-------------------------------------------------------------------\n")
