@@ -100,14 +100,14 @@ print("\n\n-------------------------------------------------------------------\n
 print("\n\n1. Total number of triples in the KB\n")
 for row in g.query(query1):
    for c in row:
-        print("Total no of triples:",c,end=" ")
+        print("Total no of triples:",c,end=", ")
     
 print("\n\n-------------------------------------------------------------------\n")
 print("\n\n2. Total number of students, courses, and topics")
 print("Students  Courses  Topics")
 for row in g.query(query2):
    for c in row:
-        print(c,end=" ")
+        print(c,end=", ")
     
 print("\n\n-------------------------------------------------------------------\n")
 print("\n\n3. For a course c, list all covered topics using their (English) labels and their link to DBpedia\n")
@@ -122,7 +122,7 @@ print("Name  Grade  Course", end="")
 for row in g.query(query4):
    print() 
    for c in row:
-        print(c,end=" ")
+        print(c,end=", ")
     
 print("\n\n-------------------------------------------------------------------\n")
 print("\n\n5. For a given topic, list all students that are familiar with the topic")
@@ -130,12 +130,12 @@ print("Name | Course | Grade | Topic", end="")
 for row in g.query(query5):
    print() 
    for c in row:
-        print(c,end=" ")
+        print(c,end=", ")
 print("\n\n-------------------------------------------------------------------\n")
 print("\n\n6.For a student, list all topics (no duplicates) that this student is familiar with")
 print(" Name | Topic | Course | Grade ", end="")
 for row in g.query(query6):
    print() 
    for c in row:
-        print(c,end=" ")
+        print(c,end=", ")
 print("\n\n-------------------------------------------------------------------\n")
