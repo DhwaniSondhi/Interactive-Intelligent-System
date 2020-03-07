@@ -4,12 +4,16 @@ g.parse("baseGraph.ttl", format='turtle')
 g.parse("DataGraph.ttl", format='turtle')
 
 prefix="""PREFIX dbr: <http://dbpedia.org/resource/>
+PREFIX db: <http://dbpedia.org/>
+PREFIX is: <http://purl.org/ontology/is/core#>
 prefix dbp: <http://dbpedia.org/property/> 
 prefix dbr: <http://dbpedia.org/resource/> 
 prefix dc: <http://purl.org/dc/elements/1.1/> 
 prefix foaf: <http://xmlns.com/foaf/0.1/> 
+prefix isp: <http://intelligentsystemproj1.io/schema#> 
 prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+prefix xml: <http://www.w3.org/XML/1998/namespace> 
 prefix xsd: <http://www.w3.org/2001/XMLSchema#> 
 """
 query1=prefix+"""
@@ -23,54 +27,54 @@ SELECT
 (COUNT(DISTINCT ?students) as ?scount)
 (COUNT(DISTINCT ?courses) as ?ccount)
 (COUNT(DISTINCT ?t) as ?tcount)
+
 WHERE{
 
-  ?students rdf:type dbr:Student .
-  ?courses rdf:type dbr:Course .
-  ?k dc:hasPart ?x.
+  ?students rdf:type isp:Student .
+  ?courses rdf:type isp:Course .
+  ?k isp:hasPart ?x.
   ?x foaf:name ?t.
  }
 """
  
 query3=prefix+"""
-SELECT ?topic ?dbentry
+SELECT ?topic
 WHERE{
- ?course rdf:type dbr:Course .
- ?course foaf:name ?name .
- ?course foaf:name "Machine Learning"^^xsd:string.
- ?course dc:hasPart ?x.
- ?x foaf:name ?topic .
- ?x dc:source ?dbentry
+  ?course rdf:type isp:Course .
+  ?course foaf:name ?name .
+  ?course foaf:name "Machine Learning".
+  ?course isp:hasPart ?x.
+  ?x foaf:name ?topic.
  }
 """
 query4=prefix+"""
 SELECT ?fn ?score ?coursename
 WHERE { 
- ?s rdf:type dbr:Student;
+?s rdf:type isp:Student;
  foaf:familyName ?ln;
  foaf:givenName ?fn ;
- dc:identifier "40083896"^^xsd:int.
- ?s foaf:topic_interest ?gradeobject .
+ foaf:givenName "Mary";
+ foaf:mbox ?mb.
+?s isp:tookCourse ?gradeobject .
  ?gradeobject   dbp:score ?score ;
- dc:subject ?courseobject .
- ?courseobject foaf:name ?coursename
+    dc:subject ?courseobject .
+?courseobject foaf:name ?coursename
 }
 """
 query5=prefix+"""
                   
 SELECT ?fn ?coursename ?grade ?topicname
 WHERE { 
-?s rdf:type dbr:Student;
+?s rdf:type isp:Student;
  foaf:familyName ?ln;
- foaf:givenName ?fn ;
- dc:identifier ?e.
- ?s foaf:topic_interest ?gradeobject.
+ foaf:givenName ?fn .
+ ?s isp:tookCourse ?gradeobject.
  ?gradeobject dc:subject  ?courseobject .
  ?gradeobject dbp:score ?grade .
   ?courseobject foaf:name ?coursename.
-  ?courseobject dc:hasPart ?topic.
+  ?courseobject isp:hasPart ?topic.
+  ?topic foaf:name "CORBA".
   ?topic foaf:name ?topicname.
-  ?topic foaf:name "CORBA"^^xsd:string.
   FILTER(?grade <"F")
 } 
 """
@@ -78,20 +82,18 @@ query6=prefix+"""
                   
 SELECT DISTINCT ?fn ?topicname ?coursename ?grade 
 WHERE { 
-?s rdf:type dbr:Student;
+?s rdf:type isp:Student;
  foaf:familyName ?ln;
  foaf:givenName ?fn ;
- foaf:givenName "Michael"^^xsd:string ;
- foaf:mbox ?mb;
- dc:identifier ?e.
- ?s foaf:topic_interest ?gradeobject.
+ foaf:givenName "Michael" .
+ ?s isp:tookCourse ?gradeobject.
  ?gradeobject dc:subject  ?courseobject .
  ?gradeobject dbp:score ?grade .
   ?courseobject foaf:name ?coursename.
-  ?courseobject dc:hasPart ?topic.
+  ?courseobject isp:hasPart ?topic.
   ?topic foaf:name ?topicname.
   FILTER(?grade <"F")
-}  
+} 
  
 """
 print("\n\n-------------------------------------------------------------------\n")
@@ -112,6 +114,7 @@ print("\n\n-------------------------------------------------------------------\n
 print("\n\n3. For a course c, list all covered topics using their (English) labels and their link to DBpedia\n")
 res=g.query(query3)
 for row in res:
+   print() 
    for c in row:
         print(c, end=": ")
     
