@@ -71,3 +71,282 @@
 69,COMP,6341,Computer Vision,http://dbpedia.org/resource/Computer_vision
 70,COMP,6341,OpenCV,http://dbpedia.org/resource/OpenCV
 71,COMP,6341,COMP,http://dbpedia.org/resource/College_of_Osteopathic_Medicine_of_the_Pacific
+72,COMP,6381,digital geometry,http://dbpedia.org/resource/Digital_geometry
+73,COMP,6381,pipeline,http://dbpedia.org/resource/Graphics_pipeline
+74,COMP,6381,digital,http://dbpedia.org/resource/Digital_electronics
+75,COMP,6381,3D,http://dbpedia.org/resource/3D_modeling
+76,COMP,6381,geometry,http://dbpedia.org/resource/Geometry
+77,COMP,6381,wide range,http://dbpedia.org/resource/Fender_Wide_Range
+78,COMP,6381,computer-aided design,http://dbpedia.org/resource/Computer-aided_design
+79,COMP,6381,reverse engineering,http://dbpedia.org/resource/Reverse_engineering
+80,COMP,6381,triangle,http://dbpedia.org/resource/Computer_graphics
+81,COMP,6381,triangle mesh,http://dbpedia.org/resource/Triangle_mesh
+82,COMP,6381,spline,http://dbpedia.org/resource/Flat_spline
+83,COMP,6711,convex,http://dbpedia.org/resource/Convex_set
+84,COMP,6711,polygon triangulation,http://dbpedia.org/resource/Polygon_triangulation
+85,COMP,6711,point location,http://dbpedia.org/resource/Point_location
+86,COMP,6711,range searching,http://dbpedia.org/resource/Range_searching
+87,COMP,6711,Voronoi,http://dbpedia.org/resource/Voronoi_diagram
+88,COMP,6711,Delaunay,http://dbpedia.org/resource/Robert_Delaunay
+89,COMP,6711,triangulations,http://dbpedia.org/resource/Polygon_triangulation
+90,COMP,6711,robot,http://dbpedia.org/resource/Robotics
+91,COMP,6711,motion planning,http://dbpedia.org/resource/Motion_planning
+92,COMP,6711,binary,http://dbpedia.org/resource/Binary_number
+93,COMP,6711,plane sweep,http://dbpedia.org/resource/Sweep_line_algorithm
+94,COMP,6711,computer graphics,http://dbpedia.org/resource/Computer_graphics
+95,COMP,6711,computer aided design,http://dbpedia.org/resource/Computer-aided_design
+96,COMP,6711,mesh generation,http://dbpedia.org/resource/Mesh_generation
+97,COMP,6731,Pattern Recognition,http://dbpedia.org/resource/Pattern_recognition
+98,COMP,6731,Feature extraction,http://dbpedia.org/resource/Feature_extraction
+99,COMP,6731,Bayesian decision theory,http://dbpedia.org/resource/Bayes_estimator
+100,COMP,6731,discriminant,http://dbpedia.org/resource/Discriminant
+101,COMP,6761,3D,http://dbpedia.org/resource/3D_modeling
+102,COMP,6761,software engineering,http://dbpedia.org/resource/Software_engineering
+103,COMP,6761,3D graphics,http://dbpedia.org/resource/3D_computer_graphics
+104,COMP,6761,application architecture,http://dbpedia.org/resource/Applications_architecture
+105,COMP,6761,pipeline,http://dbpedia.org/resource/Graphics_pipeline
+106,COMP,6761,occlusion culling,http://dbpedia.org/resource/Hidden_surface_determination
+107,COMP,6761,collision detection,http://dbpedia.org/resource/Collision_detection
+108,COMP,6761,photorealism,http://dbpedia.org/resource/Photorealism
+109,COMP,6761,physics,http://dbpedia.org/resource/Game_physics
+110,COMP,6771,image enhancement,http://dbpedia.org/resource/Digital_image_processing
+111,COMP,6771,histogram,http://dbpedia.org/resource/Histogram
+112,COMP,6771,frequency domain,http://dbpedia.org/resource/Frequency_domain
+113,COMP,6771,image segmentation,http://dbpedia.org/resource/Image_segmentation
+114,COMP,6771,Hough transform,http://dbpedia.org/resource/Hough_transform
+115,COMP,6771,edge detection,http://dbpedia.org/resource/Edge_detection
+116,COMP,6771,thresholding,http://dbpedia.org/resource/Thresholding_(image_processing)
+117,COMP,6771,image compression,http://dbpedia.org/resource/Image_compression
+118,COMP,6771,wavelet transform,http://dbpedia.org/resource/Wavelet_transform
+119,COMP,7661,COMP,http://dbpedia.org/resource/College_of_Osteopathic_Medicine_of_the_Pacific
+120,COMP,7661,computer graphics,http://dbpedia.org/resource/Computer_graphics
+121,COMP,7661,cinema,http://dbpedia.org/resource/Movie_theater
+122,COMP,7751,Pattern Recognition,http://dbpedia.org/resource/Pattern_recognition
+123,COMP,7751,data acquisition,http://dbpedia.org/resource/Data_acquisition
+124,COMP,7751,feature extraction,http://dbpedia.org/resource/Feature_extraction
+125,COMP,7751,principal component analysis,http://dbpedia.org/resource/Principal_component_analysis
+126,COMP,7751,expert systems,http://dbpedia.org/resource/Expert_system
+127,COMP,7751,neural networks,http://dbpedia.org/resource/Artificial_neural_network
+128,COMP,7781,Digital image processing,http://dbpedia.org/resource/Digital_image_processing
+129,COMP,7781,morphological,http://dbpedia.org/resource/Shape
+130,COMP,7781,wavelet,http://dbpedia.org/resource/Wavelet
+131,COMP,7781,multi-resolution analysis,http://dbpedia.org/resource/Multiresolution_analysis
+132,COMP,7781,partial differential equation,http://dbpedia.org/resource/Partial_differential_equation
+133,COMP,7781,variational methods,http://dbpedia.org/resource/Calculus_of_variations
+134,COMP,7781,diffusion,http://dbpedia.org/resource/Diffusion_equation
+135,COMP,7781,Markov random field,http://dbpedia.org/resource/Markov_random_field
+136,COMP,7781,Bayesian inference,http://dbpedia.org/resource/Bayesian_inference
+137,COMP,7781,energy,http://dbpedia.org/resource/Energy
+138,COMP,7781,level set method,http://dbpedia.org/resource/Level-set_method
+139,COMP,7781,inpainting,http://dbpedia.org/resource/Inpainting
+140,COMP,6411,dynamic typing,http://dbpedia.org/resource/Type_system
+141,COMP,6421,lexical analysis,http://dbpedia.org/resource/Lexical_analysis
+142,COMP,6421,parsing,http://dbpedia.org/resource/Parsing
+143,COMP,6421,code optimization,http://dbpedia.org/resource/Program_optimization
+144,COMP,6461,error detection,http://dbpedia.org/resource/Error_detection_and_correction
+145,COMP,6461,flow control,http://dbpedia.org/resource/Control_flow
+146,COMP,6461,Packet switching,http://dbpedia.org/resource/Packet_switching
+147,COMP,6461,Internet Protocol,http://dbpedia.org/resource/Internet_Protocol
+148,COMP,6461,IPv6,http://dbpedia.org/resource/IPv6
+149,COMP,6461,multicasting,http://dbpedia.org/resource/Multicast
+150,COMP,6461,UDP,http://dbpedia.org/resource/User_Datagram_Protocol
+151,COMP,6461,TCP,http://dbpedia.org/resource/Transmission_Control_Protocol
+152,COMP,6461,Network security,http://dbpedia.org/resource/Network_security
+153,COMP,7451,Semantics,http://dbpedia.org/resource/Semantics
+154,COMP,7451,COMP,http://dbpedia.org/resource/College_of_Osteopathic_Medicine_of_the_Pacific
+155,COMP,7451,semantic,http://dbpedia.org/resource/Semantics
+156,COMP,7451,model-theoretic,http://dbpedia.org/resource/Model_theory
+157,COMP,7451,logic,http://dbpedia.org/resource/Logic
+158,COMP,7451,temporal logic,http://dbpedia.org/resource/Temporal_logic
+159,COMP,7451,distributed systems,http://dbpedia.org/resource/Distributed_computing
+160,COMP,6521,Query processing,http://dbpedia.org/resource/Query_optimization
+161,COMP,6521,optimization,http://dbpedia.org/resource/Query_optimization
+162,COMP,6521,Information integration,http://dbpedia.org/resource/Information_integration
+163,COMP,6521,Data warehouse,http://dbpedia.org/resource/Data_warehouse
+164,COMP,6521,Data mining,http://dbpedia.org/resource/Data_mining
+165,COMP,6521,OLAP,http://dbpedia.org/resource/Online_analytical_processing
+166,COMP,6521,XML,http://dbpedia.org/resource/XML
+167,COMP,6521,multimedia,http://dbpedia.org/resource/Multimedia
+168,COMP,6521,data management,http://dbpedia.org/resource/Data_management
+169,COMP,6591,first-order logic,http://dbpedia.org/resource/First-order_logic
+170,COMP,6591,relational algebra,http://dbpedia.org/resource/Relational_algebra
+171,COMP,6591,relational calculus,http://dbpedia.org/resource/Relational_calculus
+172,COMP,6591,logic programming,http://dbpedia.org/resource/Logic_programming
+173,COMP,6591,knowledge representation,http://dbpedia.org/resource/Knowledge_representation_and_reasoning
+174,COMP,6811,Bioinformatics,http://dbpedia.org/resource/Bioinformatics
+175,COMP,6811,sequence alignment,http://dbpedia.org/resource/Multiple_sequence_alignment
+176,COMP,6811,multiple sequence alignment,http://dbpedia.org/resource/Multiple_sequence_alignment
+177,COMP,6811,phylogeny,http://dbpedia.org/resource/Phylogenetic_tree
+178,COMP,6811,secondary structure prediction,http://dbpedia.org/resource/Protein_structure_prediction
+179,COMP,6811,3D,http://dbpedia.org/resource/Three-dimensional_space
+180,COMP,6811,gene,http://dbpedia.org/resource/Gene
+181,COMP,6811,expression,http://dbpedia.org/resource/Gene_expression
+182,COMP,6811,dynamic programming,http://dbpedia.org/resource/Dynamic_programming
+183,COMP,6811,machine learning,http://dbpedia.org/resource/Machine_learning
+184,COMP,6811,simulated annealing,http://dbpedia.org/resource/Simulated_annealing
+185,COMP,6821,Bioinformatics,http://dbpedia.org/resource/Bioinformatics
+186,COMP,6821,data management,http://dbpedia.org/resource/Data_management
+187,COMP,6821,knowledge management,http://dbpedia.org/resource/Knowledge_management
+188,COMP,6821,database,http://dbpedia.org/resource/Database
+189,COMP,7531,optimization,http://dbpedia.org/resource/Query_optimization
+190,COMP,7531,Incomplete,http://dbpedia.org/resource/Incomplete_(Backstreet_Boys_song)
+191,COMP,6351,numerical methods,http://dbpedia.org/resource/Numerical_analysis
+192,COMP,6351,scientific computation,http://dbpedia.org/resource/Computational_science
+193,COMP,6351,nonlinear,http://dbpedia.org/resource/Nonlinear_system
+194,COMP,6351,ordinary differential equations,http://dbpedia.org/resource/Ordinary_differential_equation
+195,COMP,6351,finite difference method,http://dbpedia.org/resource/Finite_difference_method
+196,COMP,6351,numerical stability,http://dbpedia.org/resource/Numerical_stability
+197,COMP,6351,collocation,http://dbpedia.org/resource/Collocation_method
+198,COMP,6351,partial differential equations,http://dbpedia.org/resource/Partial_differential_equation
+199,COMP,6351,diffusion,http://dbpedia.org/resource/Diffusion_equation
+200,COMP,6361,Numerical Analysis,http://dbpedia.org/resource/Numerical_analysis
+201,COMP,6361,nonlinear,http://dbpedia.org/resource/Nonlinear_system
+202,COMP,6361,numerical simulation,http://dbpedia.org/resource/Computer_simulation
+203,COMP,6361,homotopy,http://dbpedia.org/resource/Homotopy
+204,COMP,6361,asymptotic stability,http://dbpedia.org/resource/Lyapunov_stability
+205,COMP,6361,travelling wave,http://dbpedia.org/resource/Wave
+206,COMP,6361,discretization,http://dbpedia.org/resource/Discretization
+207,COMP,6621,Discrete Mathematics,http://dbpedia.org/resource/Discrete_mathematics
+208,COMP,6621,Paul Erdös,http://dbpedia.org/resource/Paul_Erdős
+209,COMP,6621,Computer Science,http://dbpedia.org/resource/Computer_science
+210,COMP,6621,Ramsey,http://dbpedia.org/resource/Ramsey_Abbey
+211,COMP,6621,theorem,http://dbpedia.org/resource/Theorem
+212,COMP,6621,Van,http://dbpedia.org/resource/Van
+213,COMP,6621,conjecture,http://dbpedia.org/resource/Conjecture
+214,COMP,6621,Extremal graph theory,http://dbpedia.org/resource/Extremal_graph_theory
+215,COMP,6621,Random graphs,http://dbpedia.org/resource/Random_graph
+216,COMP,6621,graph colouring,http://dbpedia.org/resource/Graph_coloring
+217,COMP,6621,probabilistic method,http://dbpedia.org/resource/Probabilistic_method
+218,COMP,6641,General,http://dbpedia.org/resource/General_officer
+219,COMP,6641,Turing machines,http://dbpedia.org/resource/Turing_machine
+220,COMP,6641,Turing computable,http://dbpedia.org/resource/Computable_function
+221,COMP,6641,recursive functions,http://dbpedia.org/resource/Computable_function
+222,COMP,6641,theorem,http://dbpedia.org/resource/Theorem
+223,COMP,6641,Time,http://dbpedia.org/resource/Time
+224,COMP,6641,complexity measures,http://dbpedia.org/resource/Computational_complexity_theory
+225,COMP,6641,complexity theory,http://dbpedia.org/resource/Computational_complexity_theory
+226,COMP,6651,algorithm,http://dbpedia.org/resource/Algorithm
+227,COMP,6651,combinatorial,http://dbpedia.org/resource/Combinatorial_optimization
+228,COMP,6651,dynamic programming,http://dbpedia.org/resource/Dynamic_programming
+229,COMP,6651,branch-and-bound,http://dbpedia.org/resource/Branch_and_bound
+230,COMP,6651,graph,http://dbpedia.org/resource/Graph_theory
+231,COMP,6651,complexity analysis,http://dbpedia.org/resource/Analysis_of_algorithms
+232,COMP,6651,String matching,http://dbpedia.org/resource/String_searching_algorithm
+233,COMP,6651,NP-complete,http://dbpedia.org/resource/NP-completeness
+234,COMP,6661,combinatorial,http://dbpedia.org/resource/Combinatorics
+235,COMP,6661,combinatorics,http://dbpedia.org/resource/Combinatorics
+236,COMP,6661,graph theory,http://dbpedia.org/resource/Graph_theory
+237,COMP,7521,Cryptography,http://dbpedia.org/resource/Cryptography
+238,COMP,7521,COMP,http://dbpedia.org/resource/College_of_Osteopathic_Medicine_of_the_Pacific
+239,COMP,7521,Information theory,http://dbpedia.org/resource/Information_theory
+240,COMP,7521,symmetric-key,http://dbpedia.org/resource/Symmetric-key_algorithm
+241,COMP,7521,cryptographic,http://dbpedia.org/resource/Cryptography
+242,COMP,7521,Advanced Encryption Standard,http://dbpedia.org/resource/Advanced_Encryption_Standard
+243,COMP,7521,Rijndael,http://dbpedia.org/resource/Advanced_Encryption_Standard
+244,COMP,7521,Cryptographic hash functions,http://dbpedia.org/resource/Cryptographic_hash_function
+245,COMP,7521,authentication,http://dbpedia.org/resource/Authentication
+246,COMP,7521,data integrity,http://dbpedia.org/resource/Data_integrity
+247,COMP,7521,Key distribution,http://dbpedia.org/resource/Key_distribution
+248,COMP,7521,confidentiality,http://dbpedia.org/resource/Confidentiality
+249,COMP,7521,access control,http://dbpedia.org/resource/Access_control
+250,COMP,7521,non-repudiation,http://dbpedia.org/resource/Non-repudiation
+251,COMP,7521,encryption,http://dbpedia.org/resource/Public-key_cryptography
+252,COMP,7521,digital,http://dbpedia.org/resource/Digital_data
+253,COMP,7521,challenge-response authentication,http://dbpedia.org/resource/Challenge–response_authentication
+254,COMP,7651,COMP,http://dbpedia.org/resource/College_of_Osteopathic_Medicine_of_the_Pacific
+255,COMP,7651,Amortized analysis,http://dbpedia.org/resource/Amortized_analysis
+256,COMP,6531,Semantic Web,http://dbpedia.org/resource/Semantic_Web
+257,COMP,6531,World Wide Web Consortium (W3C),http://dbpedia.org/resource/World_Wide_Web_Consortium
+258,COMP,6531,Extensible Markup Language (XML),http://dbpedia.org/resource/XML
+259,COMP,6531,Resource Description Framework (RDF),http://dbpedia.org/resource/Resource_Description_Framework
+260,COMP,6531,schema,http://dbpedia.org/resource/XML_schema
+261,COMP,6531,ontology,http://dbpedia.org/resource/Ontology_engineering
+262,COMP,6531,ontologies,http://dbpedia.org/resource/Ontology
+263,COMP,6531,Web Ontology Language (OWL),http://dbpedia.org/resource/Web_Ontology_Language
+264,COMP,6721,heuristic,http://dbpedia.org/resource/Heuristic
+265,COMP,6721,automated reasoning,http://dbpedia.org/resource/Automated_reasoning
+266,COMP,6721,knowledge representation,http://dbpedia.org/resource/Knowledge_representation_and_reasoning
+267,COMP,6721,Artificial Intelligence,http://dbpedia.org/resource/Artificial_intelligence
+268,COMP,6721,recurrent neural networks,http://dbpedia.org/resource/Recurrent_neural_network
+269,COMP,6741,Intelligent Systems,http://dbpedia.org/resource/Artificial_intelligence
+270,COMP,6741,Knowledge representation,http://dbpedia.org/resource/Knowledge_representation_and_reasoning
+271,COMP,6741,conflict resolution,http://dbpedia.org/resource/Conflict_resolution
+272,COMP,6741,blackboard,http://dbpedia.org/resource/Blackboard
+273,COMP,6751,natural language processing,http://dbpedia.org/resource/Natural-language_processing
+274,COMP,6751,English,http://dbpedia.org/resource/English_language
+275,COMP,6751,parsing,http://dbpedia.org/resource/Parsing
+276,COMP,6751,compositional semantics,http://dbpedia.org/resource/Principle_of_compositionality
+277,COMP,6751,text mining,http://dbpedia.org/resource/Text_mining
+278,COMP,6751,COMP,http://dbpedia.org/resource/College_of_Osteopathic_Medicine_of_the_Pacific
+279,COMP,6781,natural language processing (NLP),http://dbpedia.org/resource/Natural-language_processing
+280,COMP,6781,statistical machine translation,http://dbpedia.org/resource/Statistical_machine_translation
+281,COMP,6781,N-gram,http://dbpedia.org/resource/N-gram
+282,COMP,6781,word sense disambiguation,http://dbpedia.org/resource/Word-sense_disambiguation
+283,COMP,6781,part-of-speech tagging,http://dbpedia.org/resource/Part-of-speech_tagging
+284,COMP,6781,parsing,http://dbpedia.org/resource/Parsing
+285,COMP,6791,Information Retrieval,http://dbpedia.org/resource/Information_retrieval
+286,COMP,6791,Boolean,http://dbpedia.org/resource/Boolean_algebra
+287,COMP,6791,vector space,http://dbpedia.org/resource/Vector_space
+288,COMP,6791,Tokenization,http://dbpedia.org/resource/Lexical_analysis
+289,COMP,6791,Weighting,http://dbpedia.org/resource/Weighting
+290,COMP,6791,Relevance feedback,http://dbpedia.org/resource/Relevance_feedback
+291,COMP,6791,query expansion,http://dbpedia.org/resource/Query_expansion
+292,COMP,6791,XML,http://dbpedia.org/resource/XML
+293,COMP,6791,link analysis,http://dbpedia.org/resource/Link_analysis
+294,COMP,6791,PageRank,http://dbpedia.org/resource/PageRank
+295,COMP,6791,algorithm,http://dbpedia.org/resource/Algorithm
+296,COMP,6791,spam filtering,http://dbpedia.org/resource/Anti-spam_techniques
+297,SOEN,691,Software Engineering,http://dbpedia.org/resource/Software_engineering
+298,SOEN,691,SOEN,http://dbpedia.org/resource/Soen
+299,SOEN,791,Software Engineering,http://dbpedia.org/resource/Software_engineering
+300,SOEN,791,SOEN,http://dbpedia.org/resource/Soen
+301,SOEN,6441,Self-documenting code,http://dbpedia.org/resource/Self-documenting_code
+302,SOEN,6441,Software configuration management,http://dbpedia.org/resource/Software_configuration_management
+303,SOEN,6441,unit tests,http://dbpedia.org/resource/Unit_testing
+304,SOEN,6441,multi-threading,http://dbpedia.org/resource/Thread_(computing)
+305,SOEN,6441,concurrency,http://dbpedia.org/resource/Parallel_computing
+306,SOEN,6441,code reuse,http://dbpedia.org/resource/Code_reuse
+307,SOEN,6441,fault tolerance,http://dbpedia.org/resource/Fault_tolerance
+308,SOEN,6751,human computer,http://dbpedia.org/resource/Human_computer
+309,SOEN,6751,User-centered design,http://dbpedia.org/resource/User-centered_design
+310,SOEN,6751,Task analysis,http://dbpedia.org/resource/Task_analysis
+311,SOEN,6751,User interface design,http://dbpedia.org/resource/User_interface_design
+312,SOEN,6751,User interface,http://dbpedia.org/resource/User_interface
+313,SOEN,7761,SOEN,http://dbpedia.org/resource/Soen
+314,SOEN,7761,knowledge representation,http://dbpedia.org/resource/Knowledge_representation_and_reasoning
+315,SOEN,7761,user interface,http://dbpedia.org/resource/User_interface
+316,SOEN,7761,natural language interfaces,http://dbpedia.org/resource/Natural-language_user_interface
+317,SOEN,6311,Formal Methods,http://dbpedia.org/resource/Formal_methods
+318,SOEN,6311,software life-cycle,http://dbpedia.org/resource/Software_release_life_cycle
+319,SOEN,6311,process model,http://dbpedia.org/resource/Software_development_process
+320,SOEN,6311,formal specification,http://dbpedia.org/resource/Formal_specification
+321,SOEN,6311,finite-state,http://dbpedia.org/resource/Finite-state_machine
+322,SOEN,6311,Software development,http://dbpedia.org/resource/Software_development
+323,SOEN,6311,type checking,http://dbpedia.org/resource/Type_system
+324,SOEN,6311,debugging,http://dbpedia.org/resource/Debugging
+325,SOEN,6311,code generation,http://dbpedia.org/resource/Automatic_programming
+326,SOEN,6461,software design,http://dbpedia.org/resource/Software_design
+327,SOEN,6461,Design methods,http://dbpedia.org/resource/Design_methods
+328,SOEN,6461,object-oriented,http://dbpedia.org/resource/Object-oriented_design
+329,SOEN,6461,design patterns,http://dbpedia.org/resource/Software_design_pattern
+330,SOEN,6471,design patterns,http://dbpedia.org/resource/Software_design_pattern
+331,SOEN,6471,Model Driven Architecture (MDA),http://dbpedia.org/resource/Model-driven_architecture
+332,SOEN,6471,Service Oriented Architecture,http://dbpedia.org/resource/Service-oriented_architecture
+333,SOEN,6471,SOA,http://dbpedia.org/resource/Service-oriented_architecture
+334,SOEN,6471,cloud computing,http://dbpedia.org/resource/Cloud_computing
+335,SOEN,6481,requirements engineering,http://dbpedia.org/resource/Requirements_engineering
+336,SOEN,6481,software lifecycle,http://dbpedia.org/resource/Software_development_process
+337,SOEN,6481,Risk analysis,http://dbpedia.org/resource/Risk_analysis
+338,SOEN,6481,language documentation,http://dbpedia.org/resource/Language_documentation
+339,SOEN,6481,IEEE,http://dbpedia.org/resource/Institute_of_Electrical_and_Electronics_Engineers
+340,SOEN,6481,ISO,http://dbpedia.org/resource/International_Organization_for_Standardization
+341,SOEN,6481,Agile,http://dbpedia.org/resource/Agile_software_development
+342,SOEN,6481,user stories,http://dbpedia.org/resource/User_story
+343,SOEN,6481,formal specification,http://dbpedia.org/resource/Formal_specification
+344,SOEN,6481,formal languages,http://dbpedia.org/resource/Formal_language
+345,SOEN,6481,quality assurance,http://dbpedia.org/resource/Quality_assurance
+346,SOEN,6481,evolution,http://dbpedia.org/resource/Evolution
+347,SOEN,6481,UML,http://dbpedia.org/resource/Unified_Modeling_Language
+348,SOEN,6481,ontologies,http://dbpedia.org/resource/Upper_ontology
+349,SOEN,6481,domain-specific,http://dbpedia.org/resource/Domain-specific_language
+350,SOEN,6481,Test,http://dbpedia.org/resource/Test_cricket

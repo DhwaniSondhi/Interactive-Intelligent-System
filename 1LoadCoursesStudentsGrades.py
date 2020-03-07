@@ -34,33 +34,6 @@ def generate_students(courses):
 		index+=1	
 	return students, course_grades
 
-## to add new links to the base graph
-def update_base_graph(baseG, university, course, topic, student, grading, XSD, score_prop):
-	baseG.add((university, FOAF.name, XSD.string))
-	baseG.add((university, DC.source, XSD.string))
-	
-	baseG.add((course, FOAF.name, XSD.string))
-	baseG.add((course, DC.subject, XSD.string))
-	baseG.add((course, DC.identifier, XSD.int))
-	baseG.add((course, DC.description, XSD.string))
-	baseG.add((course, RDFS.seeAlso, XSD.string))
-	
-	baseG.add((topic, DC.subject, XSD.string))
-	baseG.add((topic, DC.identifier, XSD.int))
-	baseG.add((topic, FOAF.name, XSD.string))
-	baseG.add((topic, DC.source, XSD.string))
-	
-	baseG.add((student, FOAF.givenName, XSD.string))
-	baseG.add((student, FOAF.familyName, XSD.string))
-	baseG.add((student, DC.identifier, XSD.int))
-	baseG.add((student, FOAF.mbox, XSD.string))
-	
-	baseG.add((grading, DC.subject, course))
-	baseG.add((grading, score_prop, XSD.string))
-	
-	baseG.serialize(destination='baseGraph.ttl', format='turtle')
-	return baseG
-	
 
 ## to remove html tags
 def clean_data(line):
@@ -129,26 +102,19 @@ def get_courses(url, coursesCSVname, course_subs):
 			key=course["Course Subject"]+":"+course["Course Number"]
 			if key in description_dict:
 				course["Course Description"]=description_dict[key]
-			course["Link"]=""
+			course["Link"]=str(url)
 			courses.append(course)
 	
 	return courses
 	
-def start(baseGname, urls, course_subs):
-	baseG = rdflib.Graph()
-	baseG.parse(baseGname, format="ttl")
-
+def start(urls, course_subs):
+	
 	##CSV files to be created
 	universitiesCSVname=r"CSV\Universities.csv"
 	coursesCSVname=r'CSV\Courses.csv'
 	topicsCSVname=r"CSV\Topics.csv"
 	studentsCSVname=r"CSV\Students.csv"
 	gradesCSVname=r"CSV\Grades.csv"
-
-	##Updating base graph
-	dbr=Namespace("http://dbpedia.org/resource/")
-	dbp=Namespace("http://dbpedia.org/property/")
-	baseG=update_base_graph(baseG, dbr.University, dbr.Course, dbr.Concept, dbr.Student, dbr.Grading, XSD, dbp.score)
 
 	##to get courses and create Courses CSV
 	courses=list()
@@ -175,5 +141,5 @@ def start(baseGname, urls, course_subs):
 urls=["https://www.concordia.ca/academics/graduate/calendar/current/encs/computer-science-courses.html",
 	"https://www.concordia.ca/academics/graduate/calendar/current/encs/engineering-courses.html"]
 course_subs=["ENCS","ENGR","BLDG", "COEN", "CIVI", "ELEC", "INDU", "MECH", "INSE", "CHME", "MBA", "BCEE", "COMP","SOEN"]
-baseGname="base.ttl"
-start(baseGname, urls, course_subs)
+start(urls, course_subs)
+print("done")
