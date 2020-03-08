@@ -2,6 +2,7 @@ import rdflib
 import pandas
 from rdflib import Graph, Namespace, RDF, RDFS, BNode, Literal, URIRef
 from rdflib.namespace import DC, FOAF, XSD
+import math
 
 def create_university(kGraph, universityClass, ISPData):
 	extend="_".join("Concordia University".split())
@@ -25,7 +26,10 @@ def create_courses(courses, kGraph, universityInstance, courseClass, ISPData, IS
 		kGraph.add((courseInstance, FOAF.name, Literal(str(course['Course Name']))))
 		kGraph.add((courseInstance, DC.subject, Literal(str(course['Course Subject']))))
 		kGraph.add((courseInstance, DC.identifier, Literal(course['Course Number'])))
-		kGraph.add((courseInstance, DC.description, Literal(str(course['Course Description']))))
+		desp=course['Course Description']
+		if type(desp)==float:
+			desp=""
+		kGraph.add((courseInstance, DC.description, Literal(desp)))
 		kGraph.add((courseInstance, RDFS.seeAlso, Literal(str(course['Link']))))
 		kGraph.add((universityInstance, ISPSchema.coversCourse, courseInstance))
 		courseIntances_id[key]=courseInstance
