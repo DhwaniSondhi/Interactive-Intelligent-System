@@ -12,7 +12,6 @@ def start():
 	courses=courses_df.to_dict('records')
 	
 	
-	print(len(remove_abc))
 	final_course_topics=list()
 	cou_list = list(range(0,len(courses)))
 	print(cou_list)
@@ -27,7 +26,6 @@ def start():
 			end=len(cou_list)
 		print(start, end) 
 		############################################	
-		##courses_updated=set()
 		for val_llop in range(start,end):
 			loop=cou_list[val_llop]
 			print(loop)
