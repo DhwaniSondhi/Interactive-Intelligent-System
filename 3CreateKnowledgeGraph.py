@@ -5,7 +5,7 @@ from rdflib.namespace import DC, FOAF, XSD
 import math
 
 def create_university(kGraph, universityClass, ISPData):
-	extend="_".join("Concordia University".split())
+	extend="1"+"_".join("Concordia University".split())
 	universityInstance=URIRef(ISPData+"university/"+extend)
 	kGraph.add((universityInstance, RDF.type, universityClass))
 	kGraph.add((universityInstance, FOAF.name, Literal(str("Concordia University"))))
@@ -21,7 +21,7 @@ def create_courses(courses, kGraph, universityInstance, courseClass, ISPData, IS
 		
 		key=course['Course Subject']+":"+str(course['Course Number'])
 		extend=course['Course Subject']+"_"+str(course['Course Number'])
-		courseInstance=URIRef(ISPData+"courses/"+extend)
+		courseInstance=URIRef(ISPData+"courses/"+str(loop)+extend)
 		kGraph.add((courseInstance, RDF.type, courseClass))
 		kGraph.add((courseInstance, FOAF.name, Literal(str(course['Course Name']))))
 		kGraph.add((courseInstance, DC.subject, Literal(str(course['Course Subject']))))
@@ -38,19 +38,21 @@ def create_courses(courses, kGraph, universityInstance, courseClass, ISPData, IS
 
 def create_topics(courseIntances_id, kGraph, topicClass, topics, ISPData, ISPSchema):
 	
-	
+	ins=0
 	for loop in range(0,len(topics)):
 		topic=topics[loop]
 		
 		key=topic['Course Subject']+":"+str(topic['Course Number'])
 		if key in courseIntances_id:
 			extend="_".join(topic['Topic'].split())
-			topicInstance=URIRef(ISPData+"topics/"+extend)
+			topicInstance=URIRef(ISPData+"topics/"+str(loop)+extend)
+			ins+=1
 			kGraph.add((topicInstance, RDF.type, topicClass))
 			kGraph.add((topicInstance, FOAF.name, Literal(str(topic['Topic']))))
 			kGraph.add((topicInstance, DC.source, Literal(str(topic['URI']))))
 			kGraph.add((courseIntances_id[key], ISPSchema.hasPart, topicInstance))
 	
+	print(ins)
 	return kGraph
 	
 	

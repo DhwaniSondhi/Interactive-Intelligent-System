@@ -10,7 +10,21 @@ def generate_students(courses):
 	students=list()
 	course_grades=list()
 	
-	names=[('James', 'Smith'),('Michael', 'Smith'),('Robert', 'Smith'),('Maria', 'Garcia'), ('David', 'Smith'), ('Maria', 'Rodriguez'), ('Mary', 'Smith'), ('Maria', 'Hernandez'), ('Maria', 'Martinez'), ('James', 'Johnson')]
+	names=[	('James', 'Smith'),
+			('Michael', 'Smith'),
+			('Robert', 'Smith'),
+			('Maria', 'Garcia'),
+			('David', 'Smith'), 
+			('Maria', 'Rodriguez'), 
+			('Mary', 'Smith'), 
+			('Maria', 'Hernandez'), 
+			('Maria', 'Martinez'), 
+			('James', 'Johnson'),
+			('Tajinder','Singh'),
+			('Vritti','Bhalla'),
+			('Saloni', 'Chawla'),
+			('Itti', 'Malik'),
+			('Sahaj','Sharma')]
 	index=0
 	id=40083895
 	for name in names:
@@ -22,7 +36,7 @@ def generate_students(courses):
 		student['Email']=name[0].lower()+name[1].lower()+"@gmail.com"
 		students.append(student)
 		
-		grades=['A','B+','A+']
+		grades=['F','B+','A+']
 		for loop in range(index+0,index+3):
 			if loop<len(courses):
 				course_grade=dict()
