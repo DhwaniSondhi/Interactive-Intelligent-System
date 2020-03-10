@@ -236,7 +236,7 @@ def start(urls, course_subs):
 		if not enter:
 			courses.append(courses_d[key][0])
 		
-	print(len(courses))
+	print("Total number of courses:",len(courses))
 	##to save courses
 	courses_df=pandas.DataFrame(courses)
 	courses_df.to_csv(coursesCSVname, encoding='utf-8-sig')
@@ -352,7 +352,7 @@ urls=	["https://www.concordia.ca/academics/graduate/calendar/current/encs/comput
 		"http://www.concordia.ca/academics/graduate/calendar/current/fasc/theo.html",
 		"http://www.concordia.ca/academics/graduate/calendar/current/fasc/soci-ma.html"]
 
-print(len(urls))
+print("Total number of urls:",len(urls))
 course_subs=["ADIP", "APLI", "AMPS", "ASEM", "ARTH", "ATRP", "ACCO", "AHSC", "ARTE", "ADMI", "ANTH", 
 			"BLDG", "BCEE", "BSTA", "BTM", "BIO", "BIOL", 
 			"COEN", "CIVI", "CHME", "CHEM", "CATS", "COMS", "CHST", "COMP", "COMM", "CERA", "CPTP", 
