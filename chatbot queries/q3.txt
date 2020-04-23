@@ -9,12 +9,12 @@ prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix xml: <http://www.w3.org/XML/1998/namespace> 
 prefix xsd: <http://www.w3.org/2001/XMLSchema#> 
 
-SELECT DISTINCT (CONCAT(?subject, " ", ?number, " ", ?name) as ?subname)
+SELECT  ?subject  ?number  ?name 
 WHERE{ 
 ?course rdf:type isp:Course . 
 ?course dc:subject ?subject . 
 ?course dc:identifier ?number .
-?course foaf:name ?name ;
+?course foaf:name ?name .
 ?course isp:hasPart ?topic . 
 ?topic foaf:name "Game engine" . 
 }

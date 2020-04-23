@@ -19,4 +19,4 @@ WHERE{ ?student rdf:type isp:Student .
 ?courseGrade dc:subject ?course .  
 ?course isp:hasPart ?topic . 
 ?topic foaf:name "Game engine" . 
-FILTER(?grade < "F") }
+FILTER(?grade < "F") .}

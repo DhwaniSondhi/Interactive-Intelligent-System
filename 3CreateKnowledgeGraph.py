@@ -89,6 +89,7 @@ def create_grades(kGraph, gradeClass, grades, studentIntances_id, DBP, courseInt
 			kGraph.add((gradeInstance, RDF.type, gradeClass))
 			kGraph.add((gradeInstance, DC.subject, courseIntances_id[keyCourse]))
 			kGraph.add((gradeInstance, DBP.score, Literal(str(grade['Grade']))))
+			kGraph.add((gradeInstance, DBP.termPeriod, Literal(str(grade['Term']))))
 			kGraph.add((studentIntances_id[keyStudent], ISPSchema.tookCourse, gradeInstance))
 			
 	

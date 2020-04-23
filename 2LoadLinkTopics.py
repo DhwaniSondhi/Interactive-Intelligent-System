@@ -8,7 +8,7 @@ def start():
 	coursesCSVname=r'CSV\Courses.csv'
 	topicsCSVname=r"CSV\Topics.csv"
 	
-	courses_df=pandas.read_csv(coursesCSVname)
+	courses_df=pandas.read_csv(coursesCSVname, encoding='ISO-8859-1')
 	courses=courses_df.to_dict('records')
 	
 	
@@ -45,6 +45,7 @@ def start():
 						topic=dict()
 						topic['Course Subject']=course['Course Subject']
 						topic['Course Number']=course['Course Number']
+						topic['Course Name']=course["Course Name"]
 						topic_included.append(link['surfaceForm'].lower())
 						topic['Topic']=link['surfaceForm']
 						topic['URI']=link['URI']

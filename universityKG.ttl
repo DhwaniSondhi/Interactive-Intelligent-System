@@ -22,7 +22,7 @@ isp:Course
 	a rdfs:Class ;
 	foaf:name xsd:string ;
 	dc:subject xsd:string ;
-	dc:identifier xsd:int ;
+	dc:identifier xsd:string ;
     dc:description xsd:string ;
     rdfs:seeAlso xsd:string ;
 	rdfs:label "Course"@en ;
@@ -53,7 +53,8 @@ isp:CourseGrade
 	dc:subject isp:Course ;
 	dbp:score xsd:string ;
 	rdfs:label "Course and Grade"@en;
-	rdfs:comment "Courses with Grades of a student"@en.
+	rdfs:comment "Courses with Grades of a student"@en ;
+	dbp:termPeriod xsd:string .
 
 
 

@@ -25,6 +25,8 @@ def generate_students(courses):
 			('Saloni', 'Chawla'),
 			('Itti', 'Malik'),
 			('Sahaj','Sharma')]
+			
+	
 	index=0
 	id=40083895
 	for name in names:
@@ -37,12 +39,14 @@ def generate_students(courses):
 		students.append(student)
 		
 		grades=['F','B+','A+']
+		terms=["Summer 2019", "Winter 2019", "Fall 2019"]
 		for loop in range(index+0,index+3):
 			if loop<len(courses):
 				course_grade=dict()
 				course_grade['Student ID']=id+index
 				course_grade['Course ID(COMP 464)']=courses[loop]['Course Subject']+" "+courses[loop]['Course Number']
 				course_grade['Grade']=grades[loop-index]
+				course_grade['Term']=terms[loop-index]
 				course_grades.append(course_grade)
 				
 		index+=1	
@@ -215,14 +219,17 @@ def start(urls, course_subs):
 	courses_d=dict()
 	crs=list()
 	for url in urls:
-		in_course_dict=get_courses(url, coursesCSVname, course_subs)
-		crs.extend(in_course_dict.values())
-		for key in in_course_dict.keys():
-			if key in courses_d:
-				courses_d[key].append(in_course_dict[key])
-			else:
-				courses_d[key]=list()
-				courses_d[key].append(in_course_dict[key])
+		try:
+			in_course_dict=get_courses(url, coursesCSVname, course_subs)
+			crs.extend(in_course_dict.values())
+			for key in in_course_dict.keys():
+				if key in courses_d:
+					courses_d[key].append(in_course_dict[key])
+				else:
+					courses_d[key]=list()
+					courses_d[key].append(in_course_dict[key])
+		except:
+			continue
 	
 	courses=list()
 	for key in courses_d.keys():
