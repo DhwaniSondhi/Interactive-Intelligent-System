@@ -27,9 +27,9 @@ def query2(g,prefix):
 def query3(g,prefix,subject,number):
 	query3=prefix+'\nSELECT DISTINCT ?name ?link WHERE{ ?course rdf:type isp:Course . ?course dc:subject "'
 	query3+=subject
-	query3+='" . ?course dc:identifier '
+	query3+='" . ?course dc:identifier "'
 	query3+=str(number)
-	query3+=' . ?course isp:hasPart ?topic . ?topic dc:source ?link . ?topic foaf:name ?name . }'
+	query3+='" . ?course isp:hasPart ?topic . ?topic dc:source ?link . ?topic foaf:name ?name . }'
 	print()
 	print("TopicName           TopicLink")
 	for row in g.query(query3):
