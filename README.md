@@ -1,12 +1,12 @@
-# Interactive Intelligent System
+## Interactive Intelligent System
  This is combination of two assignments of COMP6741 Intelligent Systems. The aim of these assignments was to develop an intelligent agent that can answer University-related questions using a Knowledge-graph and Regex comparison. 
  
-### Basics
+### Basics:
 - **Knowledge Graphs** are information represented in the form of graphs.
 - **Nodes** are the entities and **Edges** are the relationships between nodes.
 - Each fact in knowledge graph is represented as a **triple (subject, predicate, object)**.
 
-### Project Introduction
+### Project Introduction:
 - Our knowledge graph stores information about all the undergraduate and graduate courses of the Concordia University.
 - The courses are being linked to topics covered and dummy students with grades. 
 - The answers to the queries are given using SPARQL queries.
@@ -14,7 +14,7 @@
 - Graphs are based on turtle format.
 - Used Regular Expressions to translate given input into SPARQL queries.
 
-### DataSet Created
+### DataSet Created:
 - **Courses.csv** stores the data related to courses and its properties.
 - **Grades.csv** stores the courses and the grade scores by each student.
 - **Student.csv** stores information about students such as name, email, id etc.
