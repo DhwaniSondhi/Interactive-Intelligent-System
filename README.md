@@ -1,5 +1,5 @@
 ## Interactive Intelligent System
- This is combination of two assignments of COMP6741 Intelligent Systems. The aim of these assignments was to develop an intelligent agent that can answer University-related questions using a Knowledge-graph, Web Scraping and Regular Expressions. 
+ This is combination of two assignments of COMP6741 Intelligent Systems. The aim of these assignments was to develop an intelligent agent that can answer University-related questions by creating a Knowledge-graph using Web Scraping and converting questions using Regular Expressions. 
  
 ### Basics:
 - **Knowledge Graphs** are information represented in the form of graphs.
